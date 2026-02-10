@@ -35,11 +35,7 @@ import homeImage from '$lib/images/hero-banners/Reactor-Panel.avif'
 				<!-- Note to developers in the future: if using server-side, get rid of json and iterate through directories-->
 				<a class="card bg-base-100 image-full w-96 h-18 mb-3" href="/">
 					<figure>
-						<img
-							src={homeImage}
-							alt="home"
-							class="w-full h-full object-cover"
-						/>
+						<img src={homeImage} alt="home" class="w-full h-full object-cover" />
 					</figure>
 					<div class="card-body">
 						<h2 class="card-title">Home</h2>
