@@ -21,7 +21,10 @@ import hero from '$lib/images/hero-banners/badges.avif'
 					<div class="collapse-content text-sm">
 						<ol class="list-decimal list-inside">
 							<li>Disable Auto Scram</li>
-							<li>Disable Main Circ Pumps and isolation valves, withdraw rods as fast as possible</li>
+							<li>
+								Disable Main Circ Pumps and isolation valves, withdraw rods as fast
+								as possible
+							</li>
 							<li>Explode the reactor within 8 minutes</li>
 						</ol>
 					</div>
@@ -39,8 +42,14 @@ import hero from '$lib/images/hero-banners/badges.avif'
 					<summary class="collapse-title">How to Get</summary>
 					<div class="collapse-content text-sm">
 						<ol class="list-decimal list-inside">
-							<li>Climb on top of the first cooling tower (left relative to train tracks)</li>
-							<li>Turn left and walk around the cooling tower until you see a floppa cube</li>
+							<li>
+								Climb on top of the first cooling tower (left relative to train
+								tracks)
+							</li>
+							<li>
+								Turn left and walk around the cooling tower until you see a floppa
+								cube
+							</li>
 							<li>Push the floppa</li>
 						</ol>
 					</div>
@@ -58,7 +67,10 @@ import hero from '$lib/images/hero-banners/badges.avif'
 					<summary class="collapse-title">How to Get</summary>
 					<div class="collapse-content text-sm">
 						<ol class="list-decimal list-inside">
-							<li>Grab all pizza from the staff cafeteria (repeatedly touch the pizza circle)</li>
+							<li>
+								Grab all pizza from the staff cafeteria (repeatedly touch the pizza
+								circle)
+							</li>
 							<li>Head to the Reactor Hall</li>
 							<li>Look for a water pool on your right when entering</li>
 							<li>Drop pizzas in your inventory into the pool (press backspace)</li>
@@ -78,9 +90,14 @@ import hero from '$lib/images/hero-banners/badges.avif'
 					<summary class="collapse-title">How to Get</summary>
 					<div class="collapse-content text-sm">
 						<ol class="list-decimal list-inside">
-							<li>Go to either generator bridge circuit room (left/right of Turbine Sub Level)</li>
+							<li>
+								Go to either generator bridge circuit room (left/right of Turbine
+								Sub Level)
+							</li>
 							<li>Go behind the breakers, away from the barrier</li>
-							<li>Jump up and down until you get electrocuted by hitting the wires</li>
+							<li>
+								Jump up and down until you get electrocuted by hitting the wires
+							</li>
 						</ol>
 					</div>
 				</details>
@@ -135,7 +152,10 @@ import hero from '$lib/images/hero-banners/badges.avif'
 							<li>Go to the turbine hall entrance (next to control room)</li>
 							<li>Take the south stairwell and climb to the top</li>
 							<li>Turn left and go through the door</li>
-							<li>Walk forward until you see a blue furry plushy, click it (may need multiple tries)</li>
+							<li>
+								Walk forward until you see a blue furry plushy, click it (may need
+								multiple tries)
+							</li>
 						</ol>
 					</div>
 				</details>
@@ -189,7 +209,10 @@ import hero from '$lib/images/hero-banners/badges.avif'
 					<summary class="collapse-title">How to Get</summary>
 					<div class="collapse-content text-sm">
 						<ul class="list-disc list-inside">
-							<li>Successfully produce power and maintain the reactor for 7 days without meltdowns</li>
+							<li>
+								Successfully produce power and maintain the reactor for 7 days
+								without meltdowns
+							</li>
 						</ul>
 					</div>
 				</details>
@@ -223,8 +246,14 @@ import hero from '$lib/images/hero-banners/badges.avif'
 					<summary class="collapse-title">How to Get</summary>
 					<div class="collapse-content text-sm">
 						<ol class="list-decimal list-inside">
-							<li>Reach 100% efficiency by lowering bypass usage on turbine while meeting demand</li>
-							<li>Lower reactor power in 50 MW increments until bypass is fully closed (requires Auto Bypass)</li>
+							<li>
+								Reach 100% efficiency by lowering bypass usage on turbine while
+								meeting demand
+							</li>
+							<li>
+								Lower reactor power in 50 MW increments until bypass is fully closed
+								(requires Auto Bypass)
+							</li>
 						</ol>
 					</div>
 				</details>
@@ -241,7 +270,9 @@ import hero from '$lib/images/hero-banners/badges.avif'
 					<summary class="collapse-title">How to Get</summary>
 					<div class="collapse-content text-sm">
 						<ul class="list-disc list-inside">
-							<li>Complete a shift by yourself without exploding/melting the reactor</li>
+							<li>
+								Complete a shift by yourself without exploding/melting the reactor
+							</li>
 						</ul>
 					</div>
 				</details>
@@ -259,7 +290,10 @@ import hero from '$lib/images/hero-banners/badges.avif'
 					<div class="collapse-content text-sm">
 						<ol class="list-decimal list-inside">
 							<li>Toggle the red/grey switches on the end of the operator panel</li>
-							<li>When the reactor water level line graph shows a straight line, click on it multiple times</li>
+							<li>
+								When the reactor water level line graph shows a straight line, click
+								on it multiple times
+							</li>
 						</ol>
 					</div>
 				</details>
@@ -330,7 +364,8 @@ import hero from '$lib/images/hero-banners/badges.avif'
 						<ol class="list-decimal list-inside">
 							<li>Reach the end of a shift and receive the shutdown call</li>
 							<li>Follow the shutdown checklist</li>
-							<li>Ensure systems are properly configured before inspection:
+							<li>
+								Ensure systems are properly configured before inspection:
 								<ul class="list-disc list-inside ml-4">
 									<li>Turbine Gear engaged for both turbines</li>
 									<li>Breaker 18M-G1 is off</li>

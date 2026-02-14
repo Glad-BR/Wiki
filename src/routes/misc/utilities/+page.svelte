@@ -5,7 +5,7 @@ import Footer from '$lib/components/Footer.svelte'
 import hero from '$lib/images/hero-banners/utilities.avif'
 
 let demandValue = 1000
-let reactorPower = 4200
+let reactorPower = 4000
 let plantOutput = 1000
 let plantUsage = 4200
 let hoursInput = 8
@@ -20,8 +20,12 @@ let paycheckResult = ''
 
 function runCalculationTurbine() {
 	const result = demandValue / 2
-	turbineCalcResult = result.toFixed(2)
-	turbineCalcResultPlus = (result + 12).toFixed(2)
+	turbineCalcResult = result.toString() + ' MW'
+	turbineCalcResultPlus = (result + 12).toString() + ' MW'
+	// Cap the results at 750 MW to prevent people getting confused.
+	if (parseFloat(turbineCalcResultPlus) > 750) {
+		turbineCalcResultPlus = '750' + ' MW'
+	}
 }
 
 function runCalculationEfficiency() {
@@ -30,7 +34,7 @@ function runCalculationEfficiency() {
 	const C = plantUsage
 
 	if (P === 1600 || C === 0) {
-		efficiencyResult = 'Invalid'
+		efficiencyResult = '000.00%'
 		return
 	}
 
@@ -38,7 +42,7 @@ function runCalculationEfficiency() {
 	const term2 = 35 * ((77 * (O / 4570 + 0.65)) / C)
 	const result = term1 + term2
 
-	const percentage = (result * 100).toFixed(2)
+	const percentage = (result * 100).toFixed(2).toString().padStart(6, '0')
 	efficiencyResult = percentage + '%'
 }
 
@@ -73,26 +77,38 @@ runCalculationTurbine()
 			<h2 class="card-title">Turbine Auto Bypass Calculator</h2>
 
 			<p class="text-sm mb-4">
-				The formula for what to input into each auto-bypass <span class="font-bold text-success">with</span>
+				The formula for what to input into each auto-bypass <span
+					class="font-bold text-success"
+				>
+					with
+				</span>
 				extra efficiency is: Demand ÷ 2 + 12
 			</p>
 			<p class="text-sm mb-4">
-				The formula for what to input into each auto-bypass <span class="font-bold text-error">without</span>
+				The formula for what to input into each auto-bypass <span
+					class="font-bold text-error"
+				>
+					without
+				</span>
 				extra efficiency is: Demand ÷ 2
 			</p>
 			<p class="text-sm mb-4">
-				The Deaerator significantly contributes to the amount of steam the reactor can produce; adjust the inlet and outlet valves accordingly.
+				The Deaerator significantly contributes to the amount of steam the reactor can
+				produce; adjust the inlet and outlet valves accordingly.
 			</p>
 
 			<div class="form-control mb-4">
+				<!-- svelte-ignore a11y_label_has_associated_control -->
 				<label class="label">
-					<span class="label-text">Demand: <span class="font-bold">{demandValue} MW</span></span>
+					<span class="label-text">
+						Demand: <span class="font-bold">{demandValue} MW</span>
+					</span>
 				</label>
 				<input
 					type="range"
 					min="950"
 					max="1500"
-					step="10"
+					step="5"
 					bind:value={demandValue}
 					on:input={runCalculationTurbine}
 					class="range"
@@ -122,6 +138,7 @@ runCalculationTurbine()
 
 			<div class="space-y-4">
 				<div class="form-control">
+					<!-- svelte-ignore a11y_label_has_associated_control -->
 					<label class="label">
 						<span class="label-text">Reactor Power (MW):</span>
 					</label>
@@ -137,6 +154,7 @@ runCalculationTurbine()
 				</div>
 
 				<div class="form-control">
+					<!-- svelte-ignore a11y_label_has_associated_control -->
 					<label class="label">
 						<span class="label-text">Plant Output (MW):</span>
 					</label>
@@ -152,6 +170,7 @@ runCalculationTurbine()
 				</div>
 
 				<div class="form-control">
+					<!-- svelte-ignore a11y_label_has_associated_control -->
 					<label class="label">
 						<span class="label-text">Plant Usage:</span>
 					</label>
@@ -184,6 +203,7 @@ runCalculationTurbine()
 
 			<div class="space-y-4">
 				<div class="form-control">
+					<!-- svelte-ignore a11y_label_has_associated_control -->
 					<label class="label">
 						<span class="label-text">Hours Worked:</span>
 					</label>
@@ -199,6 +219,7 @@ runCalculationTurbine()
 				</div>
 
 				<div class="form-control">
+					<!-- svelte-ignore a11y_label_has_associated_control -->
 					<label class="label">
 						<span class="label-text">Base MW Output:</span>
 					</label>
@@ -214,6 +235,7 @@ runCalculationTurbine()
 				</div>
 
 				<div class="form-control">
+					<!-- svelte-ignore a11y_label_has_associated_control -->
 					<label class="label">
 						<span class="label-text">Bonus Multiplier:</span>
 					</label>
@@ -233,6 +255,7 @@ runCalculationTurbine()
 				</div>
 
 				<div class="form-control">
+					<!-- svelte-ignore a11y_label_has_associated_control -->
 					<label class="label">
 						<span class="label-text">Efficiency Rating:</span>
 					</label>

@@ -3,13 +3,15 @@ export let heroImg: string
 export let title: string
 export let catchphrase: string
 export let button: string = ''
+export let buttontext: string = 'Play'
 import pageData from '$lib/data/pageData.json' with { type: 'json' }
 import homeImage from '$lib/images/hero-banners/Reactor-Panel.avif'
+import KDLogo from '$lib/images/icons&logos/Koyot-Digital-Emblem.avif'
 </script>
 
 <!-- #region NavBar content -->
 <div class="navbar bg-base-100 sticky top-0 z-50">
-	<div class="drawer">
+	<div class="drawer w-12">
 		<input id="my-drawer-1" type="checkbox" class="drawer-toggle" />
 		<div class="drawer-content">
 			<label for="my-drawer-1" class="btn bg-transparent shadow-none border-0 drawer-button">
@@ -33,6 +35,7 @@ import homeImage from '$lib/images/hero-banners/Reactor-Panel.avif'
 			<label for="my-drawer-1" aria-label="close sidebar" class="drawer-overlay"></label>
 			<ul class="menu bg-base-200 min-h-full p-4 w-104">
 				<!-- Note to developers in the future: if using server-side, get rid of json and iterate through directories-->
+				 <input id="searchBox" type="text" placeholder="Search" class="input input-bordered w-auto mb-2" />
 				<a class="card bg-base-100 image-full w-96 h-18 mb-3" href="/">
 					<figure>
 						<img src={homeImage} alt="home" class="w-full h-full object-cover" />
@@ -65,24 +68,31 @@ import homeImage from '$lib/images/hero-banners/Reactor-Panel.avif'
 		</div>
 	</div>
 	<div class="flex-none">
-		<input
-			id="searchBox"
-			type="text"
-			placeholder="Search"
-			class="input input-bordered w-24 md:w-auto"
-		/>
+		<div>
+			<span>
+				<img
+					alt="Koyot Digital Logo"
+					width="50px"
+					height="50px"
+					class="inline-block fill-current ml-4"
+					style="border-radius: 0.25rem;"
+					src={KDLogo}
+				/>
+			</span>
+			<span class="ml-2 font-semibold font-helvetica_like">OAKRIDGE NUCLEAR POWER STATION WIKI</span>
+		</div>
 	</div>
 </div>
 <!-- #endregion -->
 <!-- #region Hero content -->
-<div class="hero heros min-h-screen" style="background-image:url('{heroImg}');">
+<div class="hero h-[75vh]" style="background-image:url('{heroImg}');">
 	<div class="hero-overlay"></div>
 	<div class="hero-content text-neutral-content text-center">
 		<div class="max-w-md">
 			<h1 class="mb-5 text-5xl font-bold">{title}</h1>
 			<p class="mb-5">{catchphrase}</p>
 			{#if button !== ''}
-				<button class="btn btn-primary" on:click={() => window.open(button)}>Play</button>
+				<button class="btn btn-primary" on:click={() => window.open(button)}>{buttontext}</button>
 			{/if}
 		</div>
 	</div>

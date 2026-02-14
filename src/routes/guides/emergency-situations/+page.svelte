@@ -63,13 +63,13 @@ import TickBox from '$lib/components/ChecklistItem.svelte'
 		<br />
 		<i>If Alert Core Water High</i>
 		<TickBox item="Feedwater Pumps" action="Disable as required" indent />
-		<TickBox item="Circ. Drains 1 & 2" action="Enable as required" indent />
+		<TickBox item="Circulation Drains 1 & 2" action="Enable as required" indent />
 		<TickBox item="Water Level" action="Monitor" indent />
 		<br />
 		<i>If Alert Core Water Low</i>
 		<br />
 		<TickBox item="Feedwater Pumps" action="Disable as required" indent />
-		<TickBox item="Circ. Drains 1 & 2" action="Enable as required" indent />
+		<TickBox item="Circulation Drains 1 & 2" action="Enable as required" indent />
 		<TickBox item="Water Level" action="Monitor" indent />
 		<br />
 		<i>If Alert Core Water Low Low</i>
@@ -90,34 +90,31 @@ import TickBox from '$lib/components/ChecklistItem.svelte'
 		<TickBox
 			item="A3-5"
 			action="Enable"
-			info="if you are a visitor or trainee, enable reactor Mode 0."
+			info="If you are a visitor or trainee, enable reactor Mode 0."
 			indent={true}
 		/>
 		<TickBox
 			item="All Relief Valves"
 			action="Open"
-			warning="This will cause a rumble"
+			warning="The building will begin to rumble."
 			indent={true}
 		/>
 		<TickBox item="OCC Pumps 1 & 2" action="Enable" indent={true} />
 		<TickBox item="Heat Exchanger Valves A & B" action="Open" indent={true} />
-		<TickBox
-			item="Reactor Temperature"
-			action="Wait for temperature readout to be black"
-			indent={true}
-		/>
+		<TickBox item="Reactor Temperature Black Readout" action="Await" indent={true} />
 		<br />
 		<i>If Shutdown Unsuccessful</i>
 		<br />
-		<TickBox item="START RUNNING" action="QUICKLY" indent={true} actionColor="1" />
+		<TickBox item="Evacuate the facility" action="Quickly" indent={true} actionColor="1" />
 		<br />
 		<i>If Shutdown Successful</i>
 		<TickBox
-			item="Call 106 on the plant operations phone"
-			action="Request to repair damaged systems"
-			indent={true}
+			item="Contact Engineering"
+			info="Contact the engineers by dialing 106 on the Plant Operations phone."
+			action="Repair Damaged Systems"
 		/>
-		<TickBox item="Once repaired" action="Start Reactor Again" indent={true} />
+		<TickBox item="All Systems Repaired" action="Await" indent={true} />
+		<TickBox item="Reactor Startup" action="Carefully" indent={true} />
 	</div>
 	<input type="radio" name="my_tabs_5" class="tab" aria-label="Loss of Offsite Power" />
 	<div class="tab-content bg-base-100 border-base-300 p-6">
@@ -128,15 +125,24 @@ import TickBox from '$lib/components/ChecklistItem.svelte'
 		<br />
 		<br />
 		<TickBox item="A3-5" action="Enable" indent={true} />
-		<TickBox item="Once repaired" action="Start Reactor Again" indent={true} />
-		<TickBox item="Once repaired" action="Start Reactor Again" indent={true} />
-		<TickBox item="Once repaired" action="Start Reactor Again" indent={true} />
-		<TickBox item="Once repaired" action="Start Reactor Again" indent={true} />
-		<TickBox item="Once repaired" action="Start Reactor Again" indent={true} />
-		<TickBox item="Once repaired" action="Start Reactor Again" indent={true} />
-		<TickBox item="Once repaired" action="Start Reactor Again" indent={true} />
-		<TickBox item="Once repaired" action="Start Reactor Again" indent={true} />
-		<TickBox item="Once repaired" action="Start Reactor Again" indent={true} />
+		<TickBox item="Breaker 64A-M" action="Disable" indent={true} />
+		<TickBox item="Breaker 64-G2" action="Disable" indent={true} />
+		<TickBox item="Emergency Diesel Generators 1 & 2" action="Start" indent={true} />
+		<TickBox item="Main Circulation Pumps B1, B2, C1, C2" action="Disable" indent={true} />
+		<TickBox item="Main Circulation Pumps A1 & A2" action="Enable" indent={true} />
+		<TickBox item="Offline Core Cooling Pumps 1 & 2" action="Enable" indent={true} />
+		<TickBox item="Heat Exchanger Valves A & B" action="Enable" indent={true} />
+		<TickBox item="Main Circulation Pumps A1 & A2" action="Speed 1" indent={true} />
+		<TickBox item="Emergency Diesel Generators 1 & 2 At Speed" action="Await" indent={true} />
+		<TickBox item="Emergency Diesel Generators 1 & 2 Breakers" action="Enable" indent={true} />
+		<TickBox item="Breaker 480LV-A" action="Enable" indent={true} />
+		<TickBox
+			item="Contact Engineering"
+			info="Contact the engineers by dialing 106 on the Plant Operations phone."
+			action="Reset Breakers"
+		/>
+		<TickBox item="Offline Core Cooling Systems" action="Verify Working Order" indent={true} />
+		<TickBox item="Temperature, Pressure, Water Level" action="Monitor" indent={true} />
 	</div>
 </div>
 <Footer />

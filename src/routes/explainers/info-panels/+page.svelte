@@ -3,6 +3,8 @@ import '../../../app.css'
 import Header from '$lib/components/Header.svelte'
 import Footer from '$lib/components/Footer.svelte'
 import Indicator from '$lib/components/ControlRoomIndicator.svelte'
+const containerCSS = 'flex grid grid-cols-4 grid-rows-3 flex-col items-center justify-center'
+// tomfoolery
 const coolantPumpTripDescription =
 	'This alert indicates that the coolant pumps for either cooling tower have tripped. \nTypically, you would only see this occur during a power loss.\nTo regain power, call engineering and tell them to reset the breakers.'
 </script>
@@ -20,7 +22,7 @@ const coolantPumpTripDescription =
 			Makeup Water - Diesel Generator - Radiation Monitoring Panel
 		</div>
 		<div class="collapse-content text-sm">
-			<div class="grid grid-cols-4 grid-rows-3">
+			<div class={containerCSS}>
 				<Indicator
 					name="Coolant Pump A1 Trip"
 					description={coolantPumpTripDescription}

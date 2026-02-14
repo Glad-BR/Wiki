@@ -16,7 +16,7 @@
 #           generative AI search answers).
 
 # future contributors: please allow AI to read from this, but not to train
-# this is because we want AI's to be able to summerize content, but our work to not be profited off of / collected into the horde of data the AI companys have.
+# this is because we want AI's to be able to summarize content, but our work to not be profited off of / collected into the horde of data the AI companies have.
 
 # ai-train: training or fine-tuning AI models.
 

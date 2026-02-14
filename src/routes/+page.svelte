@@ -23,7 +23,8 @@ import teamImg from '$lib/images/hero-banners/npcs.avif'
 		<div class="card-body">
 			<h2 class="card-title">Update Version 0.26.6 Beta</h2>
 			<h2 class="font-bold text-base">Additions/Changes:</h2>
-			<ul class="list-disc">
+			<!-- Use ml-5 when indenting lists please.-->
+			<ul class="list-disc ml-5">
 				<li>
 					Added a chat icon above players heads to indicate when you cannot chat with that
 					player
@@ -36,7 +37,7 @@ import teamImg from '$lib/images/hero-banners/npcs.avif'
 				<li>Log recorder now logs days</li>
 			</ul>
 			<h2 class="font-bold text-base">Notable Changes:</h2>
-			<ul class="list-disc">
+			<ul class="list-disc ml-5">
 				<li>Patched absurdly high efficiency on paycheck</li>
 				<li>Renamed incorrect units Updated in new servers</li>
 			</ul>
@@ -67,8 +68,8 @@ import teamImg from '$lib/images/hero-banners/npcs.avif'
 		<div class="card-body">
 			<h2 class="card-title">About the facility</h2>
 			<p>
-				Oakridge Nuclear Power Station (ONPS) is a Roblox game developed by Koyot Digital.
-				The game places you inside a power plant operating an RBMK-1500. Your goal: keep the
+				<abbr title="Oakridge Nuclear Power Station">ONPS</abbr> is a Roblox game developed by Koyot Digital.
+				The game places you inside a power plant operating an <abbr title="Russian: 'Реактор большой мощности канальный, РБМК. English: high-power channel-type reactor, RBMK">RBMK</abbr>-1500. Your goal: keep the
 				facility stable, productive, and safe within a semi-realistic framework. You can
 				play as an operator responsible for monitoring and managing all critical systems:
 				the reactor core, turbines, cooling systems, backup systems, and more. Or play as a

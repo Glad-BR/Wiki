@@ -8,7 +8,7 @@ import hero from '$lib/images/hero-banners/updates.avif'
 <Header
 	heroImg={hero}
 	title="Updates"
-	catchphrase="We all love an update!"
+	catchphrase="who needs semantic versioning anyway? (if you couldn't tell, not oakridge)"
 />
 
 <div class="m-5">
@@ -36,7 +36,10 @@ import hero from '$lib/images/hero-banners/updates.avif'
 				<h2 class="card-title">Version 0.2.6.6 BETA</h2>
 				<h3 class="font-bold mt-2">✏️ Additions/Changes:</h3>
 				<ul class="list-disc list-inside">
-					<li>Added a chat icon above players' heads to indicate when you cannot chat with that player</li>
+					<li>
+						Added a chat icon above players' heads to indicate when you cannot chat with
+						that player
+					</li>
 					<li>SCRAM restricted to Jr. Op+ unless in an emergency situation</li>
 					<li>Additional information added to SCRAM reports</li>
 					<li>Master mute restricted to Jr. Op+</li>
@@ -61,7 +64,10 @@ import hero from '$lib/images/hero-banners/updates.avif'
 				<h3 class="font-bold mt-4">✏️ Additions/Changes:</h3>
 				<ul class="list-disc list-inside">
 					<li>Removed Christmas decorations</li>
-					<li>Low-ranked players will no longer collide with each other due to fling exploits</li>
+					<li>
+						Low-ranked players will no longer collide with each other due to fling
+						exploits
+					</li>
 				</ul>
 			</div>
 		</div>
@@ -72,12 +78,15 @@ import hero from '$lib/images/hero-banners/updates.avif'
 				<h2 class="card-title">Version 0.2.6.4 BETA</h2>
 				<p class="font-bold mt-2">Attention all personnel and operators!</p>
 				<p class="italic mt-2 mb-4">
-					A cold front has crossed over Oakridge Nuclear Power Station, bringing extra snowfall this Christmas
-					season! Stay warm and enjoy unlimited complimentary coffee in the break room! Happy holidays from all of us
-					here at Koyot Digital! ❄️
+					A cold front has crossed over Oakridge Nuclear Power Station, bringing extra
+					snowfall this Christmas season! Stay warm and enjoy unlimited complimentary
+					coffee in the break room! Happy holidays from all of us here at Koyot Digital!
+					❄️
 				</p>
 				<p class="text-lg font-bold">🎁 The Christmas Event is now LIVE!</p>
-				<p class="font-bold text-success">Now through Christmas Day, Sold power will be doubled!!! ✨</p>
+				<p class="font-bold text-success">
+					Now through Christmas Day, Sold power will be doubled!!! ✨
+				</p>
 				<h3 class="font-bold mt-4">✏️ Additions/Changes:</h3>
 				<ul class="list-disc list-inside">
 					<li>Sold power markup of 100%! (Limited time)</li>
@@ -96,13 +105,18 @@ import hero from '$lib/images/hero-banners/updates.avif'
 				<h3 class="font-bold mt-2">🔧 Patched</h3>
 				<ul class="list-disc list-inside">
 					<li>Problem with efficiency breaking randomly.</li>
-					<li>Issue with power sold being miscalculated, causing a way to sell unattainable amounts of power.</li>
+					<li>
+						Issue with power sold being miscalculated, causing a way to sell
+						unattainable amounts of power.
+					</li>
 				</ul>
-				<p class="italic mt-4">Nothing crazy or super notable, just had to be done now sooner than later.</p>
+				<p class="italic mt-4">
+					Nothing crazy or super notable, just had to be done now sooner than later.
+				</p>
 			</div>
 		</div>
 
-		<!-- V0.2.6.2 -->
+		<!-- V0.26.2 -->
 		<div class="card card-border bg-base-100" id="v.0.2.6.2">
 			<div class="card-body">
 				<h2 class="card-title">Version 0.2.6.2 BETA</h2>
@@ -117,7 +131,7 @@ import hero from '$lib/images/hero-banners/updates.avif'
 			</div>
 		</div>
 
-		<!-- V0.2.6.1 -->
+		<!-- V0.26.1 -->
 		<div class="card card-border bg-base-100" id="v.0.2.6.1">
 			<div class="card-body">
 				<h2 class="card-title">Version 0.2.6.1 BETA</h2>
@@ -151,10 +165,18 @@ import hero from '$lib/images/hero-banners/updates.avif'
 					<li>Cooling basins are now functional</li>
 					<li>Added Plant Director badge</li>
 					<li>Increased initial fuel level for the diesel generators</li>
-					<li>Added who initialized a vote-kick, along with the final vote within the server message</li>
+					<li>
+						Added who initialized a vote-kick, along with the final vote within the
+						server message
+					</li>
 					<li>Trainee raised to 10k</li>
-					<li>New "anti-trolling measures" (should make messing with reactor and turbines harder in normal conditions)</li>
-					<li>Probability of meltdown from the floppa has been limited to private servers</li>
+					<li>
+						New "anti-trolling measures" (should make messing with reactor and turbines
+						harder in normal conditions)
+					</li>
+					<li>
+						Probability of meltdown from the floppa has been limited to private servers
+					</li>
 				</ul>
 				<h3 class="font-bold mt-4">🔧 Notable Fixes:</h3>
 				<ul class="list-disc list-inside space-y-1">
@@ -171,6 +193,17 @@ import hero from '$lib/images/hero-banners/updates.avif'
 		<div class="card card-border bg-base-100" id="v.0.2.5">
 			<div class="card-body">
 				<h2 class="card-title">Version 0.2.5 BETA</h2>
+				<h3 class="font-bold mt-4">Patches:</h3>
+				<ul class="list-disc list-inside space-y-1">
+					<li>Patched the "ECCS Strat" by having the nitrogen refill limited and .</li>
+					<li>Fixed being stuck on phone after resetting</li>
+					<li>Music volume setting now saves correctly</li>
+					<li>Fixed player locator highlight not clearing on reset</li>
+					<li>
+						Disabled access to scram, turbine trip and turbine breakers in non-emergency
+						senerios
+					</li>
+				</ul>
 				<h3 class="font-bold mt-2">New Features:</h3>
 				<ul class="list-disc list-inside space-y-1">
 					<li>Recoded vehicles on the client</li>
@@ -179,7 +212,6 @@ import hero from '$lib/images/hero-banners/updates.avif'
 					<li>Shift Manager / Supervisor achievement</li>
 					<li>New "All Time Leaderboard" (Top 6 players)</li>
 					<li>Visitor Card system (Limited access for visitors)</li>
-					<li>Restricted access: Alarm test, SCRAM, turbine trip/breakers disabled for visitors</li>
 					<li>Security points now tracked separately from operator points</li>
 					<li>Separate ranks for Security roles</li>
 					<li>Operator point offload: 1/3 of points contribute to Security</li>
@@ -193,18 +225,12 @@ import hero from '$lib/images/hero-banners/updates.avif'
 					<li>Loading screen & main menu UI overhauled</li>
 					<li>Disclaimer and rules now shown in public servers</li>
 					<li>Automatic deaerator control added</li>
-					<li>Removed FNAO Event</li>
-					<li>ECCS reworked: Limited nitrogen, can't refill while pressurized</li>
+					<li>
+						Removed Five Nights At Oakridge (F.N.A.O.) Event (does not remove badge)
+					</li>
 					<li>New core heat distribution display</li>
-					<li>AFK status displayed if no input after 3 and a half minutes</li>
+					<li>AFK status displayed if no input after 200~ Seconds. ()</li>
 					<li>New Gamepass: Spawn with Geiger counter</li>
-				</ul>
-				<h3 class="font-bold mt-4">🔧 Notable Fixes:</h3>
-				<ul class="list-disc list-inside space-y-1">
-					<li>Fixed turbine blade ordering issues</li>
-					<li>Fixed being stuck on phone after resetting</li>
-					<li>Music volume setting now saves correctly</li>
-					<li>Fixed player locator highlight not clearing on reset</li>
 				</ul>
 			</div>
 		</div>

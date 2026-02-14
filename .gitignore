@@ -10,6 +10,8 @@ node_modules
 /dist
 
 # OS
+# FILTHY MAC USERS
+_MACOSX
 .DS_Store
 Thumbs.db
 

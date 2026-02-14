@@ -1,4 +1,4 @@
-# Licensing and Copyright of This Reposory.
+# Licensing and Copyright of This Repository.
 
 Unless otherwise stated, all files in this repository are shared under the
 **Creative Commons Attribution-ShareAlike 4.0 International License (CC BY-SA 4.0) & The MIT Licence** Both avalable at `/legalcode.txt`. and noted in each file.

@@ -8,7 +8,7 @@ import hero from '$lib/images/hero-banners/points.avif'
 <Header
 	heroImg={hero}
 	title="Ranks and Points"
-	catchphrase='"You don\'t know about the ranks around here? What are they teaching the new trainees? We work for a nuclear powerplant for gods sake!" - Supervisor.'
+	catchphrase=""You dont know about the ranks around here? What are they teaching the new trainees? We work for a nuclear powerplant for the NRCs sake!" - Supervisor."
 />
 
 <div class="m-5">
@@ -27,10 +27,11 @@ import hero from '$lib/images/hero-banners/points.avif'
 	<div class="bg-base-100 p-6 rounded-lg mb-6">
 		<h2 id="intro" class="text-2xl font-bold mb-4">Introduction</h2>
 		<p class="text-base">
-			The Ranks and Points system in this game is fairly simple. To rank up you just need to keep the reactor
-			and the turbines connected to the grid and meet demand. At the end of your shift (At 00:00) you will
-			earn a paycheck. Each time you get your paycheck your 'Money' turns into points. In other words your
-			main priority is to sell as much power as possible.
+			The Ranks and Points system in this game is fairly simple. To rank up you just need to
+			keep the reactor and the turbines connected to the grid and meet demand. At the end of
+			your shift (At 00:00) you will earn a paycheck. Each time you get your paycheck your
+			'Money' turns into points. In other words your main priority is to sell as much power as
+			possible.
 		</p>
 	</div>
 
@@ -39,8 +40,10 @@ import hero from '$lib/images/hero-banners/points.avif'
 		<h2 id="security-header" class="text-2xl font-bold mb-2">Security Ranks</h2>
 		<div class="alert alert-info mb-4">
 			<span>
-				If you are security you have to wait until you get <strong>25000 points</strong> to get handcuffs, and
-				<strong>75000 points</strong> for the baton
+				If you are security you have to wait until you get <strong>25000 points</strong>
+				to get handcuffs, and
+				<strong>75000 points</strong>
+				 for the baton
 			</span>
 		</div>
 
@@ -58,7 +61,10 @@ import hero from '$lib/images/hero-banners/points.avif'
 				<h3 class="text-xl font-bold mb-2">Cadet</h3>
 				<p class="text-error font-semibold">Points required: 5,000 - 74,999</p>
 				<p class="text-success font-semibold">Bonus: 0%</p>
-				<p class="italic mt-2">"Uhh I don't think visitors are allowed in the control room- and you hit the A3-5..."</p>
+				<p class="italic mt-2">
+					"Uhh I don't think visitors are allowed in the control room- and you hit the
+					A3-5..."
+				</p>
 			</div>
 
 			<!-- Officer -->
@@ -91,7 +97,8 @@ import hero from '$lib/images/hero-banners/points.avif'
 				<p class="text-error font-semibold">Points required: 2,500,000 - 4,999,999</p>
 				<p class="text-success font-semibold">Bonus: 115%</p>
 				<p class="italic mt-2">
-					"I AM TOO BUSY FOR THIS- I GOT A 5FT TALL STACK OF PAPERWORK BECAUSE OF THE DANG DIRECTOR!" - Superintendent
+					"I AM TOO BUSY FOR THIS- I GOT A 5FT TALL STACK OF PAPERWORK BECAUSE OF THE DANG
+					DIRECTOR!" - Superintendent
 				</p>
 			</div>
 
@@ -100,7 +107,10 @@ import hero from '$lib/images/hero-banners/points.avif'
 				<h3 class="text-xl font-bold mb-2">Security Director</h3>
 				<p class="text-error font-semibold">Points required: 5,000,000+</p>
 				<p class="text-success font-semibold">Bonus: 170%</p>
-				<p class="italic mt-2">"wha- im too busy right now to do this interview! I got cadets to repermand!" - Security Director</p>
+				<p class="italic mt-2">
+					"wha- im too busy right now to do this interview! I got cadets to reprimand!" -
+					Security Director
+				</p>
 			</div>
 		</div>
 	</div>
@@ -125,9 +135,10 @@ import hero from '$lib/images/hero-banners/points.avif'
 					</ul>
 				</div>
 				<p class="mt-3">
-					Welcome! You're new around here! You can ask for help or just wait for a while and let everyone else
-					do the work for you. But that's no fun! You want to press buttons and stuff and produce unlimited
-					energy for the people! So it is recommended you check out the guide! We're glad to have you on board.
+					Welcome! You're new around here! You can ask for help or just wait for a while
+					and let everyone else do the work for you. But that's no fun! You want to press
+					buttons and stuff and produce unlimited energy for the people! So it is
+					recommended you check out the guide! We're glad to have you on board.
 				</p>
 			</div>
 
@@ -145,9 +156,10 @@ import hero from '$lib/images/hero-banners/points.avif'
 					</ul>
 				</div>
 				<p class="mt-3">
-					You've got the hang of this facility. Usually more reliable than your visitors, Trainees can assist
-					around the nuclear powerplant! They can assist Jr. Operators and Sr. Operators on some menial tasks.
-					Yet they usually aren't skilled enough to maintain a nuclear reactor solo.
+					You've got the hang of this facility. Usually more reliable than your visitors,
+					Trainees can assist around the nuclear powerplant! They can assist Jr. Operators
+					and Sr. Operators on some menial tasks. Yet they usually aren't skilled enough
+					to maintain a nuclear reactor solo.
 				</p>
 			</div>
 
@@ -158,9 +170,9 @@ import hero from '$lib/images/hero-banners/points.avif'
 				<p class="text-success font-semibold">Bonus: 10%</p>
 				<p class="text-info font-semibold">VK Votes: 4</p>
 				<p class="mt-3">
-					Skilled personnel. Can handle most of the emergencies with ease. Yet they can't remain calm when a
-					visitor presses 'SCRAM' and now they need to re-do the whole reactor start up sequence... for the
-					3rd time today.
+					Skilled personnel. Can handle most of the emergencies with ease. Yet they can't
+					remain calm when a visitor presses 'SCRAM' and now they need to re-do the whole
+					reactor start up sequence... for the 3rd time today.
 				</p>
 			</div>
 
@@ -171,9 +183,10 @@ import hero from '$lib/images/hero-banners/points.avif'
 				<p class="text-success font-semibold">Bonus: 35%</p>
 				<p class="text-info font-semibold">VK Votes: 5</p>
 				<p class="mt-3">
-					Considered 'One of the best.' Minimal errors, deal with emergencies, keep the plant running at 100%
-					efficiency. There won't be anyone else like them who can handle the powerplant as good as them. You
-					can rely onto them for anything and everything.
+					Considered 'One of the best.' Minimal errors, deal with emergencies, keep the
+					plant running at 100% efficiency. There won't be anyone else like them who can
+					handle the powerplant as good as them. You can rely onto them for anything and
+					everything.
 				</p>
 				<p class="italic text-warning mt-2">Can get access to a Sr. Operator bypass key</p>
 			</div>
@@ -185,9 +198,9 @@ import hero from '$lib/images/hero-banners/points.avif'
 				<p class="text-success font-semibold">Bonus: 70%</p>
 				<p class="text-info font-semibold">VK Votes: 6</p>
 				<p class="mt-3">
-					You've reached it! The Supervisor title! You should be proud of yourself. That is no small feat! You
-					can finally oversee those who are below you! Just be prepared for chaos and prepare to discipline
-					trainees. Good luck!
+					You've reached it! The Supervisor title! You should be proud of yourself. That
+					is no small feat! You can finally oversee those who are below you! Just be
+					prepared for chaos and prepare to discipline trainees. Good luck!
 				</p>
 				<p class="italic text-warning mt-2">Can get access to a Sr. Operator bypass key</p>
 			</div>
@@ -199,9 +212,10 @@ import hero from '$lib/images/hero-banners/points.avif'
 				<p class="text-success font-semibold">Bonus: 115%</p>
 				<p class="text-info font-semibold">VK Votes: 7</p>
 				<p class="mt-3">
-					At this point all nuclear reactors are too easy for you. Emergencies? You've gotten used to them.
-					Critical failures? Can fix them in your sleep. You probably aren't even in the plant at all.
-					Probably at some other place managing shifts... Right?
+					At this point all nuclear reactors are too easy for you. Emergencies? You've
+					gotten used to them. Critical failures? Can fix them in your sleep. You probably
+					aren't even in the plant at all. Probably at some other place managing shifts...
+					Right?
 				</p>
 				<p class="italic text-warning mt-2">Can get access to a Sr. Operator bypass key</p>
 			</div>
@@ -213,9 +227,10 @@ import hero from '$lib/images/hero-banners/points.avif'
 				<p class="text-success font-semibold">Bonus: 170%</p>
 				<p class="text-info font-semibold">VK Votes: 8</p>
 				<p class="mt-3">
-					You've made it. The very top. Excellent. You know the place inside out. Can handle emergencies with
-					no effort at all. You don't even feel panic when everything goes to hell. Because you know with you
-					here. Everything will be fine. No matter how dire the situation becomes.
+					You've made it. The very top. Excellent. You know the place inside out. Can
+					handle emergencies with no effort at all. You don't even feel panic when
+					everything goes to hell. Because you know with you here. Everything will be
+					fine. No matter how dire the situation becomes.
 				</p>
 				<p class="italic text-warning mt-2">Can get access to a Sr. Operator bypass key</p>
 				<p class="italic text-warning">Can get access to Security rooms and items.</p>
@@ -228,13 +243,20 @@ import hero from '$lib/images/hero-banners/points.avif'
 				<p class="text-success font-semibold">Bonus: 210%</p>
 				<p class="text-info font-semibold">VK Votes: 10</p>
 				<p class="mt-3">
-					You've ascended beyond plant operations - you no longer run reactors, you judge them. The NRC
-					Inspector is the final boss of nuclear safety. Operators fear you, supervisors panic when you
-					arrive, and even Plant Directors suddenly remember a <em>"meeting"</em> elsewhere. With your clipboard
-					of doom, you don't just keep the plant running - you ensure OSHA and all relevant regulatory commissions
-					and agencies know if someone forgets to file NRC Form 390A.
+					You've ascended beyond plant operations - you no longer run reactors, you judge
+					them. The NRC Inspector is the final boss of nuclear safety. Operators fear you,
+					supervisors panic when you arrive, and even Plant Directors suddenly remember a <em
+					>
+						"meeting"
+					</em>
+					 elsewhere. With your clipboard of doom, you don't just keep the plant running - you
+					ensure OSHA and all relevant regulatory commissions and agencies know if someone forgets
+					to file NRC Form 390A.
 				</p>
-				<p class="italic text-warning mt-2">Can get access to a Sr. Operator bypass key ... but you'd never use them. You're here to make sure no one else abuses them.</p>
+				<p class="italic text-warning mt-2">
+					Can get access to a Sr. Operator bypass key ... but you'd never use them. You're
+					here to make sure no one else abuses them.
+				</p>
 				<p class="italic text-warning">Can get access to Security rooms and items.</p>
 			</div>
 		</div>
