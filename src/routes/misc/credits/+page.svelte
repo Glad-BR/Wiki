@@ -25,26 +25,20 @@ import itemData from '$lib/data/creditsData.json' with { type: 'json' }
 	<h1>Developers</h1>
 	<div class="tab-content bg-base-100 flex flex-wrap justify-center p-7">
 		{#each itemData.developers as data}
-			<div class="card bg-base-100 w-1/5 shadow-sm border-2 border-base-300 m-4">
-				<figure>
-					<img
-						src="/src/lib/images/people-and-npcs/devs/{data.Username}.webp"
-						alt={data.DisplayName}
-					/>
-				</figure>
-				<div class="card-body">
-					<h2 class="card-title">{data.DisplayName}</h2>
-					{#if data.Tier === 'LD'}
-						<p>Lead Developer</p>
-					{:else if data.Tier === 'SD'}
-						<p>Senior Developer</p>
-					{:else if data.Tier === 'D'}
-						<p>Junior Developer</p>
-					{:else}
-						<p class="text-error text-lg">PARSING ERROR!!!</p>
-					{/if}
+			{#if typeof data === 'object'}
+				<div class="card bg-base-100 w-1/5 shadow-sm border-2 border-base-300 m-4">
+					<figure>
+						<img
+							src="/src/lib/images/people-and-npcs/devs/{data.username}.avif"
+							alt={data.username}
+						/>
+					</figure>
+					<div class="card-body">
+						<h2 class="card-title">{data.username}</h2>
+						<p class="italic">"{data.quote}"</p>
+					</div>
 				</div>
-			</div>
+			{/if}
 		{/each}
 	</div>
 </div>
@@ -67,19 +61,17 @@ import itemData from '$lib/data/creditsData.json' with { type: 'json' }
 	<h1>Testers</h1>
 	<div class="tab-content bg-base-100 flex flex-wrap justify-center p-7">
 		{#each itemData.testers as data}
-			<div class="card bg-base-100 w-1/5 shadow-sm border-2 border-base-300 m-4">
-				<figure>
-					<img src="/src/lib/images/capybara.png" alt={data.DisplayName} />
-				</figure>
-				<div class="card-body">
-					<h2 class="card-title">{data.DisplayName}</h2>
-					{#if data.Tier === 'T'}
-						<p>Tester (AKA: Who we blame)</p>
-					{:else}
-						<p class="text-error text-lg">PARSING ERROR!!!</p>
-					{/if}
+			{#if typeof data === 'object'}
+				<div class="card bg-base-100 w-1/5 shadow-sm border-2 border-base-300 m-4">
+					<figure>
+						<img src="/src/lib/images/capybara.png" alt={data.username} />
+					</figure>
+					<div class="card-body">
+						<h2 class="card-title">{data.username}</h2>
+						<p class="italic">"{data.quote}"</p>
+					</div>
 				</div>
-			</div>
+			{/if}
 		{/each}
 	</div>
 </div>
@@ -102,21 +94,17 @@ import itemData from '$lib/data/creditsData.json' with { type: 'json' }
 	<h1>Moderators</h1>
 	<div class="tab-content bg-base-100 flex flex-wrap justify-center p-7">
 		{#each itemData.moderators as data}
-			<div class="card bg-base-100 w-1/5 shadow-sm border-2 border-base-300 m-4">
-				<figure>
-					<img src="/src/lib/images/capybara.png" alt={data.DisplayName} />
-				</figure>
-				<div class="card-body">
-					<h2 class="card-title">{data.DisplayName}</h2>
-					{#if data.Tier === 'M'}
-						<p>Moderator</p>
-					{:else if data.Tier === 'CRM'}
-						<p>Community Relations Moderator</p>
-					{:else}
-						<p class="text-error text-lg">PARSING ERROR!!!</p>
-					{/if}
+			{#if typeof data === 'object'}
+				<div class="card bg-base-100 w-1/5 shadow-sm border-2 border-base-300 m-4">
+					<figure>
+						<img src="/src/lib/images/capybara.png" alt={data.username} />
+					</figure>
+					<div class="card-body">
+						<h2 class="card-title">{data.username}</h2>
+						<p class="italic">"{data.quote}"</p>
+					</div>
 				</div>
-			</div>
+			{/if}
 		{/each}
 	</div>
 </div>

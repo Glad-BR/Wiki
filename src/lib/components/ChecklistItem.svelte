@@ -60,7 +60,7 @@ function toIndent(i: boolean) {
 }
 
 import { onMount } from 'svelte'
-import { get } from 'svelte/store'
+
 let width = 0
 onMount(() => {
 	const update = () => (width = window.innerWidth)
