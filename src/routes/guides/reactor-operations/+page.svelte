@@ -8,7 +8,7 @@ import TickBox from '$lib/components/ChecklistItem.svelte'
 </script>
 
 <Header
-	heroImg="/src/lib/images/hero-banners/Startup.avif"
+	heroImg="/images/hero-banners/Startup.avif"
 	title="Reactor Operations"
 	catchphrase="How does this work again?"
 />

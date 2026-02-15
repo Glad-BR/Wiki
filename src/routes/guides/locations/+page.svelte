@@ -4,7 +4,7 @@
 import '../../../app.css'
 import Header from '$lib/components/Header.svelte'
 import Footer from '$lib/components/Footer.svelte'
-import hero from '$lib/images/hero-banners/locations.avif'
+const hero = '/images/hero-banners/locations.avif'
 </script>
 
 <Header

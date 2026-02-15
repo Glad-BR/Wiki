@@ -1,10 +1,10 @@
 <!-- Licensed under CC BY-SA 4.0 and MIT - See LICENSE.md -->
 
 <script>
-import KDLogo from '$lib/images/icons&logos/Koyot-Digital-Emblem.avif'
-import LicenceImg from '$lib/images/icons&logos/license.svg'
-import GitHub from '$lib/images/icons&logos/github-mark.svg'
-import Discord from '$lib/images/icons&logos/Discord.svg'
+const KDLogo = '/images/icons&logos/Koyot-Digital-Emblem.avif'
+const LicenceImg = '/images/icons&logos/license.svg'
+const GitHub = '/images/icons&logos/github-mark.svg'
+const Discord = '/images/icons&logos/Discord.svg'
 </script>
 
 <footer

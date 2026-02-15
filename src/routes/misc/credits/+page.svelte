@@ -4,7 +4,7 @@
 import '../../../app.css'
 import Header from '$lib/components/Header.svelte'
 import Footer from '$lib/components/Footer.svelte'
-import hero from '$lib/images/hero-banners/credits.avif'
+const hero = '/images/hero-banners/credits.avif'
 import itemData from '$lib/data/creditsData.json' with { type: 'json' }
 </script>
 
@@ -30,7 +30,7 @@ import itemData from '$lib/data/creditsData.json' with { type: 'json' }
 			<div class="card bg-base-100 w-1/5 shadow-sm border-2 border-base-300 m-4">
 				<figure>
 					<img
-						src="/src/lib/images/people-and-npcs/devs/{data.Username}.webp"
+						src={"/images/people-and-npcs/devs/" + data.Username + ".webp"}
 						alt={data.DisplayName}
 					/>
 				</figure>
@@ -71,7 +71,7 @@ import itemData from '$lib/data/creditsData.json' with { type: 'json' }
 		{#each itemData.testers as data}
 			<div class="card bg-base-100 w-1/5 shadow-sm border-2 border-base-300 m-4">
 				<figure>
-					<img src="/src/lib/images/capybara.png" alt={data.DisplayName} />
+					<img src="/images/capybara.png" alt={data.DisplayName} />
 				</figure>
 				<div class="card-body">
 					<h2 class="card-title">{data.DisplayName}</h2>
@@ -106,7 +106,7 @@ import itemData from '$lib/data/creditsData.json' with { type: 'json' }
 		{#each itemData.moderators as data}
 			<div class="card bg-base-100 w-1/5 shadow-sm border-2 border-base-300 m-4">
 				<figure>
-					<img src="/src/lib/images/capybara.png" alt={data.DisplayName} />
+					<img src="/images/capybara.png" alt={data.DisplayName} />
 				</figure>
 				<div class="card-body">
 					<h2 class="card-title">{data.DisplayName}</h2>

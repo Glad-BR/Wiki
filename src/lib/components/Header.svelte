@@ -6,7 +6,7 @@ export let title: string
 export let catchphrase: string
 export let button: string = ''
 import pageData from '$lib/data/pageData.json' with { type: 'json' }
-import homeImage from '$lib/images/hero-banners/Reactor-Panel.avif'
+const homeImage = '/images/hero-banners/Reactor-Panel.avif'
 </script>
 
 <!-- #region NavBar content -->

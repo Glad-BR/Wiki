@@ -7,7 +7,7 @@ import Footer from '$lib/components/Footer.svelte'
 </script>
 
 <Header
-	heroImg="/src/lib/images/hero-banners/control-room.avif"
+	heroImg="/images/hero-banners/control-room.avif"
 	title="Control Room"
 	catchphrase=";quot&REACTOR EXPLOTET!;quot& - Visitor, probably"
 />

@@ -8,7 +8,7 @@ import TickBox from '$lib/components/ChecklistItem.svelte'
 </script>
 
 <Header
-	heroImg="/src/lib/images/hero-banners/emergency.avif"
+	heroImg="/images/hero-banners/emergency.avif"
 	title="Emergency Situations & Procedures"
 	catchphrase="'I think that was the wrong button' - NRC Inspector"
 />

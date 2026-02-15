@@ -7,7 +7,7 @@ import Header from '$lib/components/Header.svelte'
 </script>
 
 <Header
-	heroImg="src/lib/images/hero-banners/banner5.avif"
+	heroImg="/images/hero-banners/banner5.avif"
 	title="Non-Player Characters"
 	catchphrase="Carson, did you steal my lunch?"
 />

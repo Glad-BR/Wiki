@@ -4,7 +4,7 @@
 import '../../../app.css'
 import Header from '$lib/components/Header.svelte'
 import Footer from '$lib/components/Footer.svelte'
-import hero from '$lib/images/hero-banners/utilities.avif'
+const hero = '/images/hero-banners/utilities.avif'
 
 let demandValue = 1000
 let reactorPower = 4200

@@ -4,10 +4,10 @@
 import '../app.css'
 import Header from '$lib/components/Header.svelte'
 import Footer from '$lib/components/Footer.svelte'
-import headerImg from '$lib/images/hero-banners/banner5.avif'
-import locations from '$lib/images/hero-banners/emergency.avif'
-import updates from '$lib/images/hero-banners/updates.avif'
-import teamImg from '$lib/images/hero-banners/npcs.avif'
+const headerImg = '/images/hero-banners/banner5.avif'
+const locations = '/images/hero-banners/emergency.avif'
+const updates = '/images/hero-banners/updates.avif'
+const teamImg = '/images/hero-banners/npcs.avif'
 </script>
 
 <Header
