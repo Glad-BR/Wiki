@@ -8,7 +8,7 @@ import hero from '$lib/images/hero-banners/points.avif'
 <Header
 	heroImg={hero}
 	title="Ranks and Points"
-	catchphrase='"You don\'t know about the ranks around here? What are they teaching the new trainees? We work for a nuclear powerplant for gods sake!" - Supervisor.'
+	catchphrase='"You don’t know about the ranks around here? What are they teaching the new trainees? We work for a nuclear powerplant for gods sake!" - Supervisor.'
 />
 
 <div class="m-5">

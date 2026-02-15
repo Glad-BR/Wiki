@@ -5,6 +5,7 @@ RUN npm ci
 COPY . .
 RUN npm run build
 RUN npm prune --production
+RUN node scripts/robloxHeads.js
 
 FROM node:22-alpine
 WORKDIR /app
