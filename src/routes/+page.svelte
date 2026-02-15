@@ -1,3 +1,5 @@
+<!-- Licensed under CC BY-SA 4.0 and MIT - See LICENSE.md -->
+
 <script lang="ts">
 import '../app.css'
 import Header from '$lib/components/Header.svelte'

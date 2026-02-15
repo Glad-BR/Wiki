@@ -1,3 +1,5 @@
+// Licensed under CC BY-SA 4.0 and MIT - See LICENSE.md
+
 import fs from 'fs/promises'
 import path from 'path'
 import sharp from 'sharp'

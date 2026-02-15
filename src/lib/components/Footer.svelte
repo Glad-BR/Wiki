@@ -1,3 +1,5 @@
+<!-- Licensed under CC BY-SA 4.0 and MIT - See LICENSE.md -->
+
 <script>
 import KDLogo from '$lib/images/icons&logos/Koyot-Digital-Emblem.avif'
 import LicenceImg from '$lib/images/icons&logos/license.svg'

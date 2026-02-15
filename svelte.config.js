@@ -1,3 +1,5 @@
+// Licensed under CC BY-SA 4.0 and MIT - See LICENSE.md
+
 import { mdsvex } from 'mdsvex'
 import adapter from '@sveltejs/adapter-node'
 import { vitePreprocess } from '@sveltejs/vite-plugin-svelte'

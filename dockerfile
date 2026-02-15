@@ -1,3 +1,5 @@
+# Licensed under CC BY-SA 4.0 and MIT - See LICENSE.md
+
 FROM node:22-alpine AS builder
 WORKDIR /app
 COPY package*.json .

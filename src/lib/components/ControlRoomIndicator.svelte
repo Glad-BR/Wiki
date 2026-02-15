@@ -1,3 +1,5 @@
+<!-- Licensed under CC BY-SA 4.0 and MIT - See LICENSE.md -->
+
 <script lang="ts">
 export let name: string
 export let description: string

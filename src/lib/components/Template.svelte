@@ -1,3 +1,5 @@
+<!-- Licensed under CC BY-SA 4.0 and MIT - See LICENSE.md -->
+
 <!-- Note, please add new pages to src/lib/data/pageData.json so it appears in the nav -->
 
 <script>
