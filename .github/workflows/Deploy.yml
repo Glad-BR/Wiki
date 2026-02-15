@@ -1,4 +1,4 @@
-name: Deploy
+name: Docker-Deploy
 permissions:
     contents: read
 
