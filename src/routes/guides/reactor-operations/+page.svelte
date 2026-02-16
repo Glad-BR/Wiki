@@ -280,7 +280,7 @@ import TickBox from '$lib/components/ChecklistItem.svelte'
 		/>
 		<br />
 		<i>If Water Temperature less than 400°F:</i>
-		<TickBox item="Main Circulation Pumps AX & BX" action="Reduce" indent />
+		<TickBox item="Main Circulation Pumps A & B" action="Reduce" indent />
 		<br />
 		<TickBox item="Deaerator Auto Control" action="Disabled" />
 		<TickBox item="Deaerator Inlet A & B" action="Closed" />
