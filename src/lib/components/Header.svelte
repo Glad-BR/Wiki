@@ -67,12 +67,12 @@ const homeImage = '/images/hero-banners/Reactor-Panel.avif'
 		</div>
 	</div>
 	<div class="flex-none">
-		<input
+		<!-- <input
 			id="searchBox"
 			type="text"
 			placeholder="Search"
 			class="input input-bordered w-24 md:w-auto"
-		/>
+		/> -->
 	</div>
 </div>
 <!-- #endregion -->
