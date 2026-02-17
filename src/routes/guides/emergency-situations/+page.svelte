@@ -6,7 +6,7 @@ import TickBox from '$lib/components/ChecklistItem.svelte'
 </script>
 
 <Header
-	heroImg="/src/lib/images/hero-banners/emergency.avif"
+	heroImg="/images/hero-banners/emergency.avif"
 	title="Emergency Situations & Procedures"
 	catchphrase="'I think that was the wrong button' - NRC Inspector"
 />
@@ -125,24 +125,15 @@ import TickBox from '$lib/components/ChecklistItem.svelte'
 		<br />
 		<br />
 		<TickBox item="A3-5" action="Enable" indent={true} />
-		<TickBox item="Breaker 64A-M" action="Disable" indent={true} />
-		<TickBox item="Breaker 64-G2" action="Disable" indent={true} />
-		<TickBox item="Emergency Diesel Generators 1 & 2" action="Start" indent={true} />
-		<TickBox item="Main Circulation Pumps B1, B2, C1, C2" action="Disable" indent={true} />
-		<TickBox item="Main Circulation Pumps A1 & A2" action="Enable" indent={true} />
-		<TickBox item="Offline Core Cooling Pumps 1 & 2" action="Enable" indent={true} />
-		<TickBox item="Heat Exchanger Valves A & B" action="Enable" indent={true} />
-		<TickBox item="Main Circulation Pumps A1 & A2" action="Speed 1" indent={true} />
-		<TickBox item="Emergency Diesel Generators 1 & 2 At Speed" action="Await" indent={true} />
-		<TickBox item="Emergency Diesel Generators 1 & 2 Breakers" action="Enable" indent={true} />
-		<TickBox item="Breaker 480LV-A" action="Enable" indent={true} />
-		<TickBox
-			item="Contact Engineering"
-			info="Contact the engineers by dialing 106 on the Plant Operations phone."
-			action="Reset Breakers"
-		/>
-		<TickBox item="Offline Core Cooling Systems" action="Verify Working Order" indent={true} />
-		<TickBox item="Temperature, Pressure, Water Level" action="Monitor" indent={true} />
+		<TickBox item="Once repaired" action="Start Reactor Again" indent={true} />
+		<TickBox item="Once repaired" action="Start Reactor Again" indent={true} />
+		<TickBox item="Once repaired" action="Start Reactor Again" indent={true} />
+		<TickBox item="Once repaired" action="Start Reactor Again" indent={true} />
+		<TickBox item="Once repaired" action="Start Reactor Again" indent={true} />
+		<TickBox item="Once repaired" action="Start Reactor Again" indent={true} />
+		<TickBox item="Once repaired" action="Start Reactor Again" indent={true} />
+		<TickBox item="Once repaired" action="Start Reactor Again" indent={true} />
+		<TickBox item="Once repaired" action="Start Reactor Again" indent={true} />
 	</div>
 </div>
 <Footer />

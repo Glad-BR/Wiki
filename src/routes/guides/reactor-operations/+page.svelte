@@ -6,7 +6,7 @@ import TickBox from '$lib/components/ChecklistItem.svelte'
 </script>
 
 <Header
-	heroImg="/src/lib/images/hero-banners/Startup.avif"
+	heroImg="/images/hero-banners/Startup.avif"
 	title="Reactor Operations"
 	catchphrase="How does this work again?"
 />
@@ -278,7 +278,7 @@ import TickBox from '$lib/components/ChecklistItem.svelte'
 		/>
 		<br />
 		<i>If Water Temperature less than 400°F:</i>
-		<TickBox item="Main Circulation Pumps AX & BX" action="Reduce" indent />
+		<TickBox item="Main Circulation Pumps A & B" action="Reduce" indent />
 		<br />
 		<TickBox item="Deaerator Auto Control" action="Disabled" />
 		<TickBox item="Deaerator Inlet A & B" action="Closed" />

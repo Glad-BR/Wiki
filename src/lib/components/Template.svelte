@@ -7,7 +7,7 @@ import Footer from '$lib/components/Footer.svelte'
 </script>
 
 <Header
-	heroImg="src/lib/images/hero-banners/[ REPLACE ME. ]"
+	heroImg="/images/hero-banners/banner5.avif"
 	title="[ REPLACE ME. ]"
 	catchphrase="[ REPLACE ME. ]"
 	button="[ OPTIONAL ]"

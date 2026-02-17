@@ -10,7 +10,7 @@ const coolantPumpTripDescription =
 </script>
 
 <Header
-	heroImg="/src/lib/images/hero-banners/info-panels.avif"
+	heroImg="/images/hero-banners/info-panels.avif"
 	title="Information Panels"
 	catchphrase="Fun Fact: Radiation Level 8+ is kinda bad ngl"
 />
