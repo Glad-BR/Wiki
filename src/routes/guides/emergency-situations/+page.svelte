@@ -129,16 +129,22 @@ import TickBox from '$lib/components/ChecklistItem.svelte'
 		</i>
 		<br />
 		<br />
-		<TickBox item="A3-5" action="Enable" indent={true} />
-		<TickBox item="Once repaired" action="Start Reactor Again" indent={true} />
-		<TickBox item="Once repaired" action="Start Reactor Again" indent={true} />
-		<TickBox item="Once repaired" action="Start Reactor Again" indent={true} />
-		<TickBox item="Once repaired" action="Start Reactor Again" indent={true} />
-		<TickBox item="Once repaired" action="Start Reactor Again" indent={true} />
-		<TickBox item="Once repaired" action="Start Reactor Again" indent={true} />
-		<TickBox item="Once repaired" action="Start Reactor Again" indent={true} />
-		<TickBox item="Once repaired" action="Start Reactor Again" indent={true} />
-		<TickBox item="Once repaired" action="Start Reactor Again" indent={true} />
+	<TickBox item="A3-5" action="PRESS" indent={true} />
+	<TickBox item="BREAKER 64A-M" action="DISABLE" indent={true} />
+	<TickBox item="BREAKER 64A-G2" action="DISABLE" indent={true} />
+	<TickBox item="EMER. DIESEL GEN. 1,2" action="START" indent={true} />
+	<TickBox item="MAIN CIRCULATION PUMPS B1 & B2" action="DISABLE" indent={true} />
+	<TickBox item="MAIN CIRCULATION PUMPS C1 & C2" action="DISABLE" indent={true} />
+	<TickBox item="MAIN CIRCULATION PUMPS A1 & A2" action="ENABLE" indent={true} />
+	<TickBox item="OCC PUMPS 1 & 2" action="ENABLE" indent={true} />
+	<TickBox item="HEAT EXCHANGER A & B" action="ENABLE" indent={true} />
+	<TickBox item="MAIN CIRCULATION PUMPS A1 & A2" action="SPEED 1" indent={true} />
+	<TickBox item="EMER. DIESEL GEN. 1,2" action="AWAIT - AT SPEED" indent={true} />
+	<TickBox item="EMER. DIESEL GEN. 1,2 BREAKER" action="ENABLE" indent={true} />
+	<TickBox item="BREAKER 480LV-A" action="VERIFY ENABLED" indent={true} />
+	<TickBox item="ENGINEERING" action="CALL - RESET BREAKERS" indent={true} />
+	<TickBox item="OFFLINE CORE COOLING SYSTEMS" action="VERIFY WORKING" indent={true} />
+	<TickBox item="TEMPERATURE, PRESSURE, WATER LEVEL" action="MONITOR" indent={true} />
 	</div>
 </div>
 <Footer />
