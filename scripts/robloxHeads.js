@@ -3,7 +3,8 @@ import path from 'path'
 import sharp from 'sharp'
 
 const DATA_PATH = path.resolve('./src/lib/data/creditsData.json')
-const STATIC_DIR = path.resolve('./src/static')
+const STATIC_DIR = path.resolve('./static/images/people/')
+const VALID_PHOTO_TYPES = new Set(['bust', 'full'])
 
 // -----------------------------
 // Collect IDs from new JSON format
@@ -52,42 +53,44 @@ async function collectRobloxIds(data) {
 }
 
 // -----------------------------
-// Fetch and convert bust images
+// Fetch and convert avatar images
 // -----------------------------
 /**
  * @param {Array<{username: string, id: number}>} items
+ * @param {'bust' | 'full'} photoType
  */
-async function fetchBustBatch(items) {
+async function fetchAvatarBatch(items, photoType) {
 	if (items.length === 0) return
 
 	const userIds = items.map(item => item.id)
-	const api = `https://thumbnails.roblox.com/v1/users/avatar-bust?userIds=${userIds.join(',')}&size=420x420&format=Webp&isCircular=false`
+	const endpoint = photoType === 'full' ? 'avatar' : 'avatar-bust'
+	const api = `https://thumbnails.roblox.com/v1/users/${endpoint}?userIds=${userIds.join(',')}&size=420x420&format=Webp&isCircular=false`
 
 	const res = await fetch(api)
 	const json = await res.json()
 
 	const idToItem = new Map(items.map(item => [item.id, item]))
 
-	for (const bust of json.data) {
+	for (const image of json.data) {
 		try {
-			if (!bust.imageUrl) continue
+			if (!image.imageUrl) continue
 
-			const item = idToItem.get(bust.targetId)
+			const item = idToItem.get(image.targetId)
 			if (!item) {
-				console.warn(`No item found for id ${bust.targetId}, skipping`)
+				console.warn(`No item found for id ${image.targetId}, skipping`)
 				continue
 			}
 
-			const imgRes = await fetch(bust.imageUrl)
+			const imgRes = await fetch(image.imageUrl)
 			const buffer = Buffer.from(await imgRes.arrayBuffer())
 
 			const outPath = path.join(STATIC_DIR, `${item.username}.avif`)
 
 			await sharp(buffer).avif({ quality: 60 }).toFile(outPath)
 
-			console.log(`Saved ${item.username}.avif`)
+			console.log(`Saved ${item.username}.avif (${photoType})`)
 		} catch (err) {
-			console.error(`Failed for ${bust.targetId}:`, err)
+			console.error(`Failed for ${image.targetId}:`, err)
 		}
 	}
 }
@@ -96,6 +99,14 @@ async function fetchBustBatch(items) {
 // Main
 // -----------------------------
 async function main() {
+	const photoTypeArg = (process.argv[2] || 'bust').toLowerCase()
+	if (!VALID_PHOTO_TYPES.has(photoTypeArg)) {
+		console.error('Invalid phototype. Use "bust" or "full".')
+		process.exit(1)
+	}
+	/** @type {'bust' | 'full'} */
+	const photoType = photoTypeArg
+
 	await fs.mkdir(STATIC_DIR, { recursive: true })
 
 	const raw = await fs.readFile(DATA_PATH, 'utf-8')
@@ -104,7 +115,7 @@ async function main() {
 	const usernameToId = await collectRobloxIds(data)
 	const items = [...usernameToId.entries()].map(([username, id]) => ({ username, id }))
 
-	console.log(`Found ${items.length} Roblox IDs`)
+	console.log(`Found ${items.length} Roblox IDs (phototype: ${photoType})`)
 
 	// Roblox gets grumpy above ~50 per call
 	const chunkSize = 50
@@ -114,7 +125,7 @@ async function main() {
 			i += chunkSize
 		){
 		const chunk = items.slice(i, i + chunkSize)
-		await fetchBustBatch(chunk)
+		await fetchAvatarBatch(chunk, photoType)
 	}
 
 	console.log('Done')
