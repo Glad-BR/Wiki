@@ -77,6 +77,7 @@ import KDLogo from '$lib/images/icons&logos/Koyot-Digital-Emblem.avif'
 					class="inline-block fill-current ml-4"
 					style="border-radius: 0.25rem;"
 					src={KDLogo}
+					herf="/"
 				/>
 			</span>
 			<span class="ml-2 font-semibold font-helvetica_like">OAKRIDGE NUCLEAR POWER STATION WIKI</span>
