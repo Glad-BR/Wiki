@@ -69,7 +69,7 @@ import KDLogo from '$lib/images/icons&logos/Koyot-Digital-Emblem.avif'
 	</div>
 	<div class="flex-none">
 		<div>
-			<span herf="/">
+			<span>
 				<img
 					alt="Koyot Digital Logo"
 					width="50px"
