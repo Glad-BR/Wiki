@@ -7,6 +7,7 @@ COPY package*.json ./
 RUN npm ci
 
 COPY . .
+RUN sh scripts/get_certs.sh
 RUN npm run build
 
 # Remove dev dependencies
