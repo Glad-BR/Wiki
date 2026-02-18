@@ -8,16 +8,7 @@ RUN npm ci
 
 COPY . .
 RUN npm run build
-
-RUN apk add --no-cache certbot
-
-RUN npm run preview &
-RUN sleep 3
-RUN sh scripts/get_certs.sh
-RUN pkill -f "npm run preview"
    
-RUN sh scripts/get_certs.sh
-
 # Remove dev dependencies
 RUN npm prune --omit=dev
 
