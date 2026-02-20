@@ -85,6 +85,5 @@ onMount(() => {
 			</p>
 		</div>
 	</div>
-	{/if}
 </div>
 <Footer />
