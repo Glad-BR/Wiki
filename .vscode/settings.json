@@ -7,11 +7,13 @@
 		"Coolvetica",
 		"daisyui",
 		"Deaerator",
+		"deepfried",
 		"dont",
 		"ECCS",
 		"EXPLOTET",
 		"externalagent",
 		"Feedwater",
+		"floppa",
 		"Hass",
 		"Koycraft",
 		"Koyot",
@@ -19,7 +21,8 @@
 		"powerplant",
 		"prefersdark",
 		"Roleplay",
-		"screensize"
+		"screensize",
+		"Speedrunner"
 	],
 	"css.lint.unknownAtRules": "ignore"
 }

@@ -73,18 +73,23 @@ onMount(() => {
 		<div class="card-body">
 			<h2 class="card-title">About the facility</h2>
 			<p>
-				<abbr title="Oakridge Nuclear Power Station">ONPS</abbr> is a Roblox game developed by Koyot Digital.
-				The game places you inside a power plant operating an <abbr title="Russian: 'Реактор большой мощности канальный, РБМК. English: high-power channel-type reactor, RBMK">RBMK</abbr>-1500. Your goal: keep the
-				facility stable, productive, and safe within a semi-realistic framework. You can
-				play as an operator responsible for monitoring and managing all critical systems:
-				the reactor core, turbines, cooling systems, backup systems, and more. Or play as a
-				security officer and handle unauthorized personnel and detain operators causing
-				mishaps. Every action matters, and a single mistake can trigger a chain reaction of
-				problems. Oakridge aims to balance technical realism with accessibility, delivering
-				an immersive experience that remains understandable for all skill levels.
+				<abbr title="Oakridge Nuclear Power Station">ONPS</abbr>
+				is a Roblox game developed by Koyot Digital. The game places you inside a power plant
+				operating an
+				<abbr
+					title="Russian: 'Реактор большой мощности канальный, РБМК. English: high-power channel-type reactor, RBMK"
+				>
+					RBMK
+				</abbr>
+				-1500. Your goal: keep the facility stable, productive, and safe within a semi-realistic
+				framework. You can play as an operator responsible for monitoring and managing all critical
+				systems: the reactor core, turbines, cooling systems, backup systems, and more. Or play
+				as a security officer and handle unauthorized personnel and detain operators causing mishaps.
+				Every action matters, and a single mistake can trigger a chain reaction of problems. Oakridge
+				aims to balance technical realism with accessibility, delivering an immersive experience
+				that remains understandable for all skill levels.
 			</p>
 		</div>
 	</div>
-	{/if}
 </div>
 <Footer />
