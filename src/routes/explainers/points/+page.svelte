@@ -8,7 +8,7 @@ const hero = '/images/hero-banners/points.avif'
 <Header
 	heroImg={hero}
 	title="Ranks and Points"
-	catchphrase='"You dont know about the ranks around here? What are they teaching the new trainees? We work for a nuclear powerplant for the NRCs sake!" - Supervisor.'
+	catchphrase=""You dont know about the ranks around here? What are they teaching the new trainees? We work for a nuclear powerplant for the NRCs sake!" - Supervisor."
 />
 
 <div class="m-5">
@@ -43,7 +43,7 @@ const hero = '/images/hero-banners/points.avif'
 				If you are security you have to wait until you get <strong>25000 points</strong>
 				to get handcuffs, and
 				<strong>75000 points</strong>
-				 for the baton
+				for the baton
 			</span>
 		</div>
 
@@ -249,7 +249,7 @@ const hero = '/images/hero-banners/points.avif'
 					>
 						"meeting"
 					</em>
-					 elsewhere. With your clipboard of doom, you don't just keep the plant running - you
+					elsewhere. With your clipboard of doom, you don't just keep the plant running - you
 					ensure OSHA and all relevant regulatory commissions and agencies know if someone forgets
 					to file NRC Form 390A.
 				</p>

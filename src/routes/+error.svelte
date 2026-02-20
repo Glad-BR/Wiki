@@ -13,7 +13,7 @@ if (page.status == 404) {
 }
 </script>
 
-<title>404 - Page not Found</title>
+<title>{page.status} - {page.error?.message || 'Unexpected Error'}</title>
 
 <Header
 	heroImg={headerImg}
