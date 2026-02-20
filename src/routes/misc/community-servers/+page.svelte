@@ -29,7 +29,7 @@ const hero = '/images/hero-banners/community-servers.avif'
 						<h2 class="card-title mb-2">OakAssist</h2>
 						<p class="text-sm mb-2">
 							<span class="font-bold">Type:</span>
-							 Education & Assistance
+							Education & Assistance
 						</p>
 						<a
 							href="https://discord.gg/meGq2vdUn8"
@@ -58,7 +58,7 @@ const hero = '/images/hero-banners/community-servers.avif'
 						<h2 class="card-title mb-2">Koycraft™ - Official Minecraft Server</h2>
 						<p class="text-sm mb-2">
 							<span class="font-bold">Type:</span>
-							 Survival - Open World - Official
+							Survival - Open World - Official
 						</p>
 						<a
 							href="https://discord.gg/6XAHNU4WHm"
@@ -90,7 +90,7 @@ const hero = '/images/hero-banners/community-servers.avif'
 							<span class="font-bold">How to Join:</span>
 							Minecraft Java Edition 1.21 at
 							<code class="bg-base-200 px-2 py-1 rounded">mc.koyot.digital</code>
-							 | More info in discord
+							| More info in discord
 						</p>
 					</div>
 				</div>
@@ -105,7 +105,7 @@ const hero = '/images/hero-banners/community-servers.avif'
 						<h2 class="card-title mb-2">Oakridge Movie Production</h2>
 						<p class="text-sm mb-2">
 							<span class="font-bold">Type:</span>
-							 Media - Realism - Roleplay
+							Media - Realism - Roleplay
 						</p>
 						<a
 							href="https://discord.gg/GjsEnra26w"
@@ -135,7 +135,7 @@ const hero = '/images/hero-banners/community-servers.avif'
 						<h2 class="card-title mb-2">Oakridge Education Center</h2>
 						<p class="text-sm mb-2">
 							<span class="font-bold">Type:</span>
-							 Education
+							Education
 						</p>
 						<a
 							href="https://discord.gg/R5SaUKqP"
@@ -167,7 +167,7 @@ const hero = '/images/hero-banners/community-servers.avif'
 						<h2 class="card-title mb-2">Oakridge Power Producers</h2>
 						<p class="text-sm mb-2">
 							<span class="font-bold">Type:</span>
-							 Grinding - Realism - Roleplay
+							Grinding - Realism - Roleplay
 						</p>
 						<a
 							href="https://discord.gg/uW5c9V5Vhr"
@@ -197,7 +197,7 @@ const hero = '/images/hero-banners/community-servers.avif'
 						<h2 class="card-title mb-2">AURELIA POWER COMPANY</h2>
 						<p class="text-sm mb-2">
 							<span class="font-bold">Type:</span>
-							 Realism - Roleplay
+							Realism - Roleplay
 						</p>
 						<a
 							href="https://discord.gg/fKzpWkBres"

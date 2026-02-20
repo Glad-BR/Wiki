@@ -18,7 +18,8 @@
 		"Oakridge",
 		"powerplant",
 		"prefersdark",
-		"Roleplay"
+		"Roleplay",
+		"screensize"
 	],
 	"css.lint.unknownAtRules": "ignore"
 }

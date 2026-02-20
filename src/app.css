@@ -45,7 +45,8 @@ abbr {
 @theme {
 	--font-info-panels: 'IBM Plex Sans', sans-serif;
 	--font-helvetica_like:
-		'Helvetica Neue', 'Hass Neue Grotesk', 'Helvetica', 'Arial', 'Coolvetica', sans-serif, system-ui;
+		'Helvetica Neue', 'Hass Neue Grotesk', 'Helvetica', 'Arial', 'Coolvetica', sans-serif,
+		system-ui;
 }
 
 /* #region Font Imports */

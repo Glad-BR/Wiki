@@ -119,11 +119,7 @@ async function main() {
 
 	// Roblox gets grumpy above ~50 per call
 	const chunkSize = 50
-	for (
-			let i = 0; 
-			i < items.length; 
-			i += chunkSize
-		){
+	for (let i = 0; i < items.length; i += chunkSize) {
 		const chunk = items.slice(i, i + chunkSize)
 		await fetchAvatarBatch(chunk, photoType)
 	}

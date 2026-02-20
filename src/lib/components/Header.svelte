@@ -5,8 +5,8 @@ export let catchphrase: string
 export let button: string = ''
 export let buttontext: string = 'Play'
 import pageData from '$lib/data/pageData.json' with { type: 'json' }
-import homeImage from '$lib/images/hero-banners/Reactor-Panel.avif'
-import KDLogo from '$lib/images/icons&logos/Koyot-Digital-Emblem.avif'
+import homeImage from '/images/hero-banners/Reactor-Panel.avif'
+import KDLogo from '/images/icons&logos/Koyot-Digital-Emblem.avif'
 </script>
 
 <!-- #region NavBar content -->
@@ -35,7 +35,12 @@ import KDLogo from '$lib/images/icons&logos/Koyot-Digital-Emblem.avif'
 			<label for="my-drawer-1" aria-label="close sidebar" class="drawer-overlay"></label>
 			<ul class="menu bg-base-200 min-h-full p-4 w-104">
 				<!-- Note to developers in the future: if using server-side, get rid of json and iterate through directories-->
-				 <input id="searchBox" type="text" placeholder="Search" class="input input-bordered w-auto mb-2" />
+				<input
+					id="searchBox"
+					type="text"
+					placeholder="Search"
+					class="input input-bordered w-auto mb-2"
+				/>
 				<a class="card bg-base-100 image-full w-96 h-18 mb-3" href="/">
 					<figure>
 						<img src={homeImage} alt="home" class="w-full h-full object-cover" />
@@ -79,7 +84,9 @@ import KDLogo from '$lib/images/icons&logos/Koyot-Digital-Emblem.avif'
 					src={KDLogo}
 				/>
 			</span>
-			<span class="ml-2 font-semibold font-helvetica_like">OAKRIDGE NUCLEAR POWER STATION WIKI</span>
+			<span class="ml-2 font-semibold font-helvetica_like">
+				OAKRIDGE NUCLEAR POWER STATION WIKI
+			</span>
 		</div>
 	</div>
 </div>
@@ -92,7 +99,9 @@ import KDLogo from '$lib/images/icons&logos/Koyot-Digital-Emblem.avif'
 			<h1 class="mb-5 text-5xl font-bold">{title}</h1>
 			<p class="mb-5">{catchphrase}</p>
 			{#if button !== ''}
-				<button class="btn btn-primary" on:click={() => window.open(button)}>{buttontext}</button>
+				<button class="btn btn-primary" on:click={() => window.open(button)}>
+					{buttontext}
+				</button>
 			{/if}
 		</div>
 	</div>
