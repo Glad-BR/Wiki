@@ -8,7 +8,7 @@ RUN npm ci
 
 COPY . .
 RUN npm run build
-
+   
 # Remove dev dependencies
 RUN npm prune --omit=dev
 
@@ -20,14 +20,15 @@ WORKDIR /app
 ENV NODE_ENV=production
 
 # Security best practice
-RUN addgroup -S nodejs && adduser -S nodejs -G nodejs
+#RUN addgroup -S nodejs && adduser -S nodejs -G nodejs --it is not needed as this is runing in docker and already containerized
 
 COPY --from=builder /app/build ./build
 COPY --from=builder /app/node_modules ./node_modules
 COPY --from=builder /app/package.json ./package.json
 
-USER nodejs
+#USER nodejs
 
 EXPOSE 3000
 
 CMD ["node", "build"]
+
