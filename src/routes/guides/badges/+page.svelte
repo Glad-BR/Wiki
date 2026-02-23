@@ -3,7 +3,7 @@ import '../../../app.css'
 import Header from '$lib/components/Header.svelte'
 import Footer from '$lib/components/Footer.svelte'
 const hero = '/images/hero-banners/badges.avif'
-import badgeData from '$lib/data/badgesData.json' with {type: "json"}
+import badgeData from '$lib/data/badgesData.json' with { type: 'json' }
 </script>
 
 <Header heroImg={hero} title="Badges" catchphrase="Gotta get them all!" />
@@ -14,8 +14,8 @@ import badgeData from '$lib/data/badgesData.json' with {type: "json"}
 			<div class="card card-border bg-base-100">
 				<div class="hover-3d">
 					<!-- content -->
-					<figure class="max-w-100 rounded-full">
-						<img src={data.image} alt={data.name} />
+					<figure class="w-fit rounded-full m-4 mx-auto">
+						<img src={data.image} alt={data.name} width="150" height="150" />
 					</figure>
 					<!-- 8 empty divs needed for the 3D effect -->
 					<div></div>
@@ -41,13 +41,13 @@ import badgeData from '$lib/data/badgesData.json' with {type: "json"}
 									{/each}
 								</ol>
 							{/if}
-								{#if data.guideType == "bullet"}
-																	<ul class="list-disc list-inside">
+							{#if data.guideType == 'bullet'}
+								<ul class="list-disc list-inside">
 									{#each data.guide as guideData}
 										<li>{guideData}</li>
 									{/each}
 								</ul>
-								{/if}
+							{/if}
 						</div>
 					</details>
 				</div>

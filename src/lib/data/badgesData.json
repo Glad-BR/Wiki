@@ -2,7 +2,7 @@
 	{
 		"name": "Speedrunner",
 		"description": "Blow up the reactor within 8 minutes.",
-		"image": "/images/badges/speedrunner.avif",
+		"image": "/images/capybara.png",
 		"guideType": "num",
 		"guide": [
 			"Disable Auto Scram.",
@@ -13,7 +13,7 @@
 	{
 		"name": "What?",
 		"description": "\"What?\"",
-		"image": "/images/badges/what.avif",
+		"image": "/images/badges/.avif",
 		"guideType": "num",
 		"guide": [
 			"Climb on top of the first cooling tower (left relative to train tracks).",
@@ -24,7 +24,7 @@
 	{
 		"name": "#1 Enemy of Staff Morale",
 		"description": "Throw all the pizza into the spent fuel pool.",
-		"image": "/images/badges/what.avif",
+		"image": "/images/badges/1_Enemy_of_staff_morale.avif",
 		"guideType": "num",
 		"guide": [
 			"Grab all pizza from the staff cafeteria (repeatedly touch the pizza circle).",
@@ -36,7 +36,7 @@
 	{
 		"name": "Deep Fried",
 		"description": "Make contact with live wires in the bridge circuit room.",
-		"image": "/images/badges/deepfried.avif",
+		"image": "/images/badges/Deep_fried.avif",
 		"guideType": "num",
 		"guide": [
 			"Go to either generator bridge circuit room (left/right of Turbine Sub Level).",
@@ -47,7 +47,7 @@
 	{
 		"name": "Sufficiently Ionized",
 		"description": "Reach a fatal dosage of ionizing radiation.",
-		"image": "/images/badges/sufficientlyionized.avif",
+		"image": "/images/badges/Sufficiently_ionized.avif",
 		"guideType": "num",
 		"guide": [
 			"Go to a radiation source (spent fuel pools or reactor hall).",
@@ -57,14 +57,14 @@
 	{
 		"name": "Power to the People",
 		"description": "Connect to the grid and deliver power.",
-		"image": "/images/badges/powertothepeople.avif",
+		"image": "/images/badges/Power_to_the_people.avif",
 		"guideType": "bullet",
 		"guide": ["Successfully sync a turbine and start producing positive power."]
 	},
 	{
 		"name": "BOOP!",
 		"description": ":3c",
-		"image": "/images/badges/boop.avif",
+		"image": "/images/badges/BOOP.avif",
 		"guideType": "num",
 		"guide": [
 			"Go to the turbine hall entrance (next to control room).",
@@ -76,7 +76,7 @@
 	{
 		"name": "Floor Pizza",
 		"description": "Kinda gross, ngl",
-		"image": "/images/badges/floorpizza.avif",
+		"image": "/images/badges/Floor_pizza.avif",
 		"guideType": "num",
 		"guide": [
 			"At the elevators in the entrance, head to level 2.",
@@ -88,30 +88,23 @@
 	{
 		"name": "You're Fired!",
 		"description": "Fail to produce any power within 48 hours.",
-		"image": "/images/badges/yourefired.avif",
+		"image": "/images/badges/Youre_fired.avif",
 		"guideType": "bullet",
 		"guide": ["Don't make any power for 2 days."]
 	},
 	{
 		"name": "7 Nights at Oakridge",
 		"description": "Complete a whole week at the plant.",
-		"image": "/images/badges/7nights.avif",
+		"image": "/images/badges/7_Nights_at_Oakridge.avif",
 		"guideType": "bullet",
 		"guide": [
 			"Successfully produce power and maintain the reactor for 7 days without meltdowns."
 		]
 	},
 	{
-		"name": "Senior Operator",
-		"description": "You've proven yourself in the art of reactor operation.",
-		"image": "/images/badges/senioroperator.avif",
-		"guideType": "bullet",
-		"guide": ["Gain 500,000 total points as an operator."]
-	},
-	{
 		"name": "By the Book",
 		"description": "Reach 100% efficiency while meeting demand.",
-		"image": "/images/badges/bythebook.avif",
+		"image": "/images/badges/By_the_book.avif",
 		"guideType": "num",
 		"guide": [
 			"Reach 100% efficiency by lowering bypass usage on turbine while meeting demand.",
@@ -121,14 +114,14 @@
 	{
 		"name": "Teamwork? Sounds Like a Liability",
 		"description": "Complete an entire shift all on your own.",
-		"image": "/images/badges/teamwork.avif",
+		"image": "/images/badges/Teamwork_Sounds_like_a_liability.avif",
 		"guideType": "bullet",
 		"guide": ["Complete a shift by yourself without exploding/melting the reactor."]
 	},
 	{
 		"name": "GET ME FEEDWATER!",
 		"description": "Don't always take things at face value.",
-		"image": "/images/badges/feedwater.avif",
+		"image": "/images/badges/GET_ME_FEEDWATER.avif",
 		"guideType": "num",
 		"guide": [
 			"Toggle the red/grey switches on the end of the operator panel.",
@@ -138,7 +131,7 @@
 	{
 		"name": "Energy Tycoon",
 		"description": "Sell over 20 gigawatt-hours of power in one day.",
-		"image": "/images/badges/energytycoon.avif",
+		"image": "/images/badges/Energy_tycoon.avif",
 		"guideType": "num",
 		"guide": [
 			"Sell a total of 20000 MW of power in a single day.",
@@ -148,7 +141,7 @@
 	{
 		"name": "OSHA would be proud",
 		"description": "Safely shut down the reactor without mishap.",
-		"image": "/images/badges/osha.avif",
+		"image": "/images/badges/OSHA_would_be_proud.avif",
 		"guideType": "num",
 		"guide": [
 			"Reach the end of a shift and receive the shutdown call.",
@@ -160,29 +153,36 @@
 	{
 		"name": "Junior Operator",
 		"description": "Hope you were paying attention.",
-		"image": "/images/badges/junioroperator.avif",
+		"image": "/images/badges/Junior_operator.avif",
 		"guideType": "bullet",
 		"guide": ["Reach 75,000 total points as an operator."]
 	},
 	{
+		"name": "Senior Operator",
+		"description": "You've proven yourself in the art of reactor operation.",
+		"image": "/images/badges/Senior_operator.avif",
+		"guideType": "bullet",
+		"guide": ["Gain 500,000 total points as an operator."]
+	},
+	{
 		"name": "Supervisor",
 		"description": "Share your wisdom and guide your peers to success!",
-		"image": "/images/badges/supervisor.avif",
+		"image": "/images/badges/Supervisor.avif",
 		"guideType": "bullet",
 		"guide": ["Earn a total of 1,250,000 points as an operator."]
 	},
 	{
 		"name": "Shift Manager",
 		"description": "Middle management, maximum ego.",
-		"image": "/images/badges/shiftmanager.avif",
-		"guideType": "num",
+		"image": "/images/badges/Shift_Manager.avif",
+		"guideType": "bullet",
 		"guide": ["Reach a total of 2,500,000 points as an operator."]
 	},
 	{
 		"name": "Plant Director",
 		"description": "Certified to blame others when things explode.",
-		"image": "/images/badges/plantdirector.avif",
-		"guideType": "num",
+		"image": "/images/badges/Plant_Director.avif",
+		"guideType": "bullet",
 		"guide": ["Reach a total of 5,000,000 points as an operator."]
 	}
 ]
